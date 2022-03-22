@@ -1,0 +1,63 @@
+.character-card {
+  width: 30%;
+  background-color: #3c3e44;
+  margin: 8px;
+  border-radius: 4px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  &__status-icon {
+    &__dead {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: red;
+      margin-right: 4px;
+    }
+    &__alive {
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: rgb(0, 255, 34);
+      margin-right: 4px;
+    }
+  }
+  &__card {
+    display: flex;
+    &__img {
+      width: 25rem;
+      height: 14rem;
+      img {
+        height: 100%;
+        width: 100%;
+      }
+    }
+    &__detail {
+      width: 100%;
+      color: white;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      padding: 1rem;
+      &__label {
+        color: #828e94;
+      }
+      &__last-seen {
+        font-size: 18px;
+      }
+    }
+  }
+  &__margin-remove {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1400px) {
+  .character-card {
+    width: 40%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .character-card {
+    width: 80%;
+  }
+}
